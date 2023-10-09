@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.0.11&packaging=war&jvmVersion=17&groupId=br.com.vinicius-prates&artifactId=todolist&name=todolist&description=Gerenciador%20de%20tarefas&packageName=br.com.vinicius-prates.todolist&dependencies=web
