@@ -4,8 +4,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import org.hibernate.annotations.CollectionId;
 import org.hibernate.annotations.CreationTimestamp;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -25,7 +27,7 @@ public class UserModel {
     @GeneratedValue(generator = "UUID") //desa forma o id sera gerado de maneira automatica
     private UUID id;
 
-
+    @Column(unique = true) 
     private String username;
     private String name;
     private String password;
